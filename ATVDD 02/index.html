@@ -1,0 +1,109 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Loja</title>
+    <link rel="stylesheet" href="CSS\styles.css">
+</head>
+<body>
+    <h1 class="titulo_um">Site de Filmes</h1>
+    
+    <p></p>
+    
+    <tr>
+        <td>Buscar Por:</td>
+        <tr><input type="text" name="Nome" size="35"></tr><br>
+    </tr>
+
+    <h3>Primeira Amostra:</h3>
+
+    <div class="galeria-container">
+        <button class="btn-scroll btn-prev" onclick="scrollGaleria(-1)">❮</button>
+        <div class="galeria-imagens">
+            <img class="imgs" src="imgs/OIP.webp" alt="">
+            <img class="imgs" src="imgs/vf.webp" alt="Velores e Furiosos 10">
+            <img class="imgs" src="imgs/rambo.jpeg" alt="Rambo IV">
+            <img class="imgs" src="imgs/carros.jpeg" alt="Carros">
+            <img class="imgs" src="imgs/mario.webp" alt="Mario Bros">
+            <img class="imgs" src="imgs/F1.webp" alt="Fórmula 1- O Filme">
+            <img class="imgs" src="imgs/guarda_costas.jpg" alt="O Guarda-Costas">
+            <img class="imgs" src="imgs/john_wick.webp" alt="John Wick 2 - Novo Dia Para Matar">
+        </div>
+        <button class="btn-scroll btn-next" onclick="scrollGaleria(1)">❯</button>
+    </div>
+
+
+    <h3>Síntese de Alguns Filmes</h3>
+    
+    <div class="container-filmes">
+    <div class="resumo_filme">
+        <h4 class="titulo_quatro">Peaky Blinders </h4>
+        <p class="texto_resumo">
+                A série acompanha a ascensão da família Shelby, <br>
+                um clã de gângsteres de origem cigana que lidera <br>
+                uma gangue conhecida como Peaky Blinders (famosos por <br>
+                costurarem lâminas de barbear em suas boinas). Sob o <br> 
+                comando do calculista e ambicioso Thomas "Tommy" Shelby, <br>
+                a família evolui de simples corretores de apostas ilegais <br>
+                para um império que alcança a política e o comércio internacional.
+        </p>
+    </div>
+    
+    <div class="resumo_filme">
+        <h4 class="titulo_quatro">Rambo V</h4>
+        <p class="texto_resumo">
+                John Rambo, interpretado por Sylvester Stallone, <br>
+                vive uma vida pacata no norte da Tailândia, pilotando <br>
+                um barco no Rio Salween. Após uma guerra civil na Birmânia,<br>
+                que envolve os birmaneses e a tribo Karen, Rambo é convidado <br>
+                por missionários para ajudar a resgatar voluntários cristãos. <br>
+                Inicialmente recusado, Rambo aceita a proposta, mas logo se <br>
+                envolve na operação de resgate, enfrentando os perigos da guerra <br>
+                e os ataques da milícia local. O filme é conhecido por seu estilo <br>
+                de ação intensa e por retratar a personalidade <br>
+                do personagem principal, Rambo.
+        </p>
+    </div>
+    
+    <div class="resumo_filme">
+        <h4 class="titulo_quatro">Velores e Furiosos X</h4>
+        <p class="texto_resumo">
+                Velozes e Furiosos começou com rachas de rua <br>
+                e roubo de carga, mas virou uma saga de espionagem <br>
+                impossível. Dominic Toretto e sua "família" de <br>
+                pilotos passam de criminosos locais a heróis globais <br>
+                que saltam de prédios e desafiam a física. O tema <br>
+                central é sempre a lealdade absoluta entre eles, <br>
+                regada a carros potentes e muita ação.
+        </p>
+    </div>
+    
+    <div class="resumo_filme">
+        <h4 class="titulo_quatro">Carros</h4>
+        <p class="texto_resumo">
+                Carros é a história de Relâmpago McQueen, um <br>
+                piloto de corrida arrogante que só pensa em fama <br>
+                e troféus. Após se perder e ficar preso em Radiator <br>
+                Springs, uma cidadezinha esquecida na Rota 66, ele <br>
+                é forçado a desacelerar. Lá, ele faz amizade com o <br>
+                guincho Mate e aprende com o veterano Doc Hudson que <br>
+                caráter e amizade valem muito mais do que cruzar a <br>
+                linha de chegada em primeiro lugar. No fim, ele <br>
+                descobre que ganhar não é tudo.
+        </p>
+    </div>
+    </div>
+    
+    <script>
+        function scrollGaleria(direcao) {
+            const galeria = document.querySelector('.galeria-imagens');
+            const scrollAmount = 300;
+            galeria.scrollBy({
+                left: direcao * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+</html>
