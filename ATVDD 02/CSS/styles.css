@@ -1,0 +1,112 @@
+body{
+    text-align: center;
+    align-items: center;
+    background-color: #DCDCDC;
+}
+
+.titulo_um{
+    align-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.resumo_filme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.titulo_quatro {
+    margin: 0;
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.texto_resumo {
+    margin: 0;
+    text-align: justify;
+    max-width: 280px;
+}
+
+.container-filmes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.paragrafu_sintasse{
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 22px;
+}
+
+.imgs {
+    width: 250px;
+    height: 350px;
+    margin: 7px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.galeria-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.galeria-imagens {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    width: 90%;
+    max-width: 1200px;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.galeria-imagens::-webkit-scrollbar {
+    height: 8px;
+}
+
+.galeria-imagens::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.galeria-imagens::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.galeria-imagens::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.btn-scroll {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-scroll:hover {
+    background-color: #0056b3;
+}
+
+.btn-scroll:active {
+    background-color: #003d82;
+}
